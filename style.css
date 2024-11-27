@@ -1,5 +1,6 @@
 body{
-    background-color: #443f4524;
+    background-color: #FFFFFF;
+    margin: 0;
 }
 #main-head{
     display: flex;
@@ -7,18 +8,31 @@ body{
     align-items: center;
     height: 80px;
     width: 95%;
-    padding: 0 40px;
+    /* padding: 0 40px; */
+    max-width: 1200px;
+    margin: 0 auto;
 }
+#super-head{
+    background-color:#f4eeee;
+    border-bottom: 2px solid black;
+}
+#main-head ul{
+    list-style: none;
+    display: flex;
+    /* justify-content: space-between; */
+}
+#main-head nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
 #logo{
     text-decoration: none;
     font-size: 30px;
     color: black;
 }
-#main-head ul{
-    list-style: none;
-    display: flex;
-    content: '\e802';
-}
+
 #main-head li{
     margin: 0 15px;
 }
@@ -26,19 +40,34 @@ body{
 
 #hero{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: center; */
+    /* gap: 170px; */
     background-size: cover;
     width: 100%;
     background-position: center;
-    margin: 0 20px;
+    /* margin: 30px 20px; */
 }
 #hero ul{
     list-style: none;
+    /* margin-top: 60px; */
+    width: 330px;
+    padding: 0;
+    padding-right: 30px;
+    border-right: 2px solid black;
+    margin: 0;
+    margin-bottom: 20px;
+}
+#hero ul li{
+    margin: 7px 0;
+    text-align: right;
 }
 #content {
     background-image: url(hotel-room.jpg);
     width: 60%;
-    margin: 0 60px;
+    height: 344px;
+    margin: 20px 60px;
+    background-position: center;
+    background-size: cover;
 }
 #hp{
     color: white;
@@ -55,7 +84,7 @@ body{
 }
 #itemss{
     display: grid;
-    width: 110%;
+    width: 90%;
     margin: 15px 25px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
